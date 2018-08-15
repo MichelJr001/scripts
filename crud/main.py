@@ -55,7 +55,7 @@ while True:
     esc = str(input('''
             Painel de cadastro
             ------ -- --------
-        
+
         ( 1 ) -> Cadastrar novo cliente.
         ( 2 ) -> Mostrar clientes cadastrados.
 
@@ -69,7 +69,7 @@ while True:
         # Se a escolha for 1:
         if esc == '1':
             # Coleta os dados do novo cliente
-            print('[ Novo cliente ]\n')
+            print('\n\n[ Novo cliente ]\n')
             nome = input('Nome: ')
             snome = input('Sobrenome: ')
             nasc = input('Data de nascimento dd/mm/yyyy: ')
@@ -78,11 +78,11 @@ while True:
 
             # Chama a fução cadastro da classe painel
             painel.cadastro(painel(), nome, snome, nasc, sexo, cpf)
-            
+
         # Se a escolha for 2:
         elif esc == '2':
             # Chama a função mostra da classe painel
-            print('[ Registros ]\n')
+            print('\n\n[ Registros ]\n')
             painel.mostra(painel())
 
         # Pegunta se o usuario deseja continuar operando, coleta a primeira letra da reposta e
