@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 # @author: Michel Anderson
-# @github: https://github.com/MichelJr001
-
+# @github: MichelJr001
+# @Twitter: _Michel_Jr_
 
 import sqlite3
 import os

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 # @author: Michel Anderson
-# @github: https://github.com/MichelJr001
-
+# @github: MichelJr001
+# @Twitter: _Michel_Jr_
 
 import sqlite3
 import os
@@ -21,7 +21,7 @@ class painel():
         self.nascimento = nascimento
         self.sexo = sexo
         self.cpf = cpf
-        
+
         # Tenta executar os comandos a seguir
         try:
             # Executa o comando SQL para inserir dados na tabela
@@ -33,17 +33,16 @@ class painel():
         # Caso a função a cima der erro ele executa os comandos a seguir
         except:
             print('Erro ao cadastrar novo usuario!')
-   
+
     # Define o metodo mostra, que imprime na tela todos o registros
      def mostra(self):
         # Executa o comando SQL e pega todos os registros da tabela
         c.execute('SELECT * FROM clientes;')
-        
+
         # Joga os resultados na variavel resultado
         for resultado in c.fetchall():
             # Imprime na tela a variavel
             print(resultado)
-        
 
 
 

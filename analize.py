@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+
+# @author: Michel Anderson
+# @github: MichelJr001
+# @Twitter: _Michel_Jr_
+
 import json
 
 class cadastro():

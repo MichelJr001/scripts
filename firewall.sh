@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# @author: Michel Anderson
+# @github: MichelJr001
+# @Twitter: _Michel_Jr_
+
 # Limpar regras existentes
 
 iptables -F
