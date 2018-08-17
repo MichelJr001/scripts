@@ -1,1 +1,4 @@
-# My basic scripts in my github :P
+@twitter: _Michel_Jr_
+
+@contact: michelcontato001@outlook.com
+
