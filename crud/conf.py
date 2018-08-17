@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 # @author: Michel Anderson
-# @github: MichelJr001
-# @Twitter: _Michel_Jr_
+# @github: https://github.com/MichelJr001
+
 
 import sqlite3
 import os
@@ -40,15 +40,18 @@ print("""
 
 """)
 
-esc = int(input('>>> '))
+esc = str(input('>>> '))
 
-if esc == 1:
-    criar()
-    print('Criado com sucesso!!')
-elif esc == 2:
-    deletar()
-    print('Deletado com sucesso!')
+if esc not in '12':
+	print('Escolha invalida!')
 else:
-    print("escolha invalida!")
+	if esc == '1':
+	    criar()
+	    print('Criado com sucesso!!')
+	elif esc == '2':
+	    deletar()
+	    print('Deletado com sucesso!')
+	else:
+	    print("escolha invalida!")
 
 
