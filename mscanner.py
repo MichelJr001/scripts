@@ -4,6 +4,8 @@
 # @github: MichelJr001
 # @Twitter: _Michel_Jr_
 
+# Coletador de amizades do facebook
+
 import os
 
 os.system("clear")

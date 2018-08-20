@@ -21,6 +21,6 @@ iptables -A INPUT -p tcp --dport 80 -j ACCEPT # HTTP
 iptables -A INPUT -p tcp --dport 443 -j ACCEPT # HTTPS
 iptables -A INPUT -p tcp --dport 3306 -j ACCEPT # MYSQL
 iptables -A INPUT -p ICMP -j DROP # PING
-# Bloqueio de demais portar
+# Bloqueio de demais portas
 
 iptables -A INPUT -p tcp --syn -j DROP
