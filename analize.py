@@ -4,6 +4,8 @@
 # @github: MichelJr001
 # @Twitter: _Michel_Jr_
 
+# Criador de arquivos json 1.0
+
 import json
 
 class cadastro():
