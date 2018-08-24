@@ -7,7 +7,7 @@
 
 
 	Installarch é uma ferramenta que eu criei para ajudar os usuarios iniciantes 
-	ou aqueles apressadinhos, que precisam de agilidade na instalação.
+	ou aqueles apressadinhos, que precisam de agilidade na instalação do arch linux.
 
 	vou logo dizendo que esse não é um script profissional, se tiver alguma critica
 	ou sugestão pode entrar em contato comigo através do meu twitter _Michel_Jr_
