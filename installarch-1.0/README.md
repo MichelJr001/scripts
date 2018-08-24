@@ -10,5 +10,5 @@
 	ou aqueles apressadinhos, que precisam de agilidade na instalação.
 
 	vou logo dizendo que esse não é um script profissional, se tiver alguma critica
-	ou sugestão pode entrar em contato comigo atrazés do meu twitter _Michel_Jr_
+	ou sugestão pode entrar em contato comigo através do meu twitter _Michel_Jr_
 
