@@ -74,7 +74,7 @@ echo -e "[$verde installarch $corPadrao]: Configurando usuarios..."
 echo -e "[$verde installarch $corPadrao]: Senha de root..."
 passwd
 echo -e "[$verde installarch $corPadrao]: Novo usuario..."
-read -p "[ nome ]: " nome
+read -p $'[\033[33m nome\033[0m ]: ' nome
 useradd -m $nome
 passwd $nome 
 echo -e "[$verde OK $corPadrao]"
