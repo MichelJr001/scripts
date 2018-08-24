@@ -11,4 +11,5 @@
 
 	vou logo dizendo que esse não é um script profissional, se tiver alguma critica
 	ou sugestão pode entrar em contato comigo através do meu twitter _Michel_Jr_
+	ou no meu email michelcontato001@outlook.com.
 
