@@ -49,6 +49,7 @@ echo -e "[$verde OK $corPadrao]"
 
 # Instala o sistema basico nas partições montadas
 echo -e "[$verde installarch $corPadrao]: Instalando o sistema basico..."
+echo "Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch" > /etc/pacman.d/mirrorlist
 pacstrap -i /mnt base base-devel
 genfstab -U -p /mnt >> /mnt/etc/fstab
 echo -e "[$verde OK $corPadrao]"
