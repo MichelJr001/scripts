@@ -42,7 +42,6 @@ echo -e "[$verde installarch $corPadrao]: Montando partições..."
 mkfs.ext4 /dev/sda1
 mkswap /dev/sda2
 swapon /dev/sda2
-lsblk
 echo -e "[$verde OK $corPadrao]"
 
 # Instala o sistema basico nas partições montadas
@@ -78,10 +77,16 @@ read -p $'[\033[33m nome\033[0m ]: ' nome
 useradd -m $nome
 passwd $nome 
 echo -e "[$verde OK $corPadrao]"
-
+echo -e "[$verde installarch $corPadrao]: Atualizando e baixando pacotes..."
+pacman -Syu
+pacman -S xf86-video-vesa
+pacman -S xfce4
+pacman -S xfdm
+echo -e "[$verde OK $corPadrao]"
 # Desmonta a partição e reinicia o sistema
 echo -e "[$verde installarch $corPadrao]: Finalizando instalação..."
-umount /mnt
+exit
+umount -a
 clear
 
 echo -e "$vermelho
