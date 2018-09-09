@@ -27,6 +27,8 @@ $vermelho
 
 Iniciando instalação...\n"""
 
+sleep 3
+
 # Muda o layout do teclado
 echo -e "[$verde installarch $corPadrao]: Mudando layout do teclado..."
 loadkeys br-abnt2
@@ -34,6 +36,7 @@ echo -e "[$verde OK $corPadrao]"
 
 # Inicia o particionador de hd
 echo -e "[$verde installarch $corPadrao]: Iniciando particionador de HD..."
+# use o modo DOS e crie uma partição normal bootavel e uma swap
 cfdisk
 echo -e "[$verde OK $corPadrao]"
 
@@ -57,6 +60,7 @@ locale-gen
 LANG="pt_PT.UTF-8" locale > /etc/locale.conf
 echo "KEYMAP=pt-latin9" > /etc/vconsole.conf
 ln -s /usr/share/zoneinfo/Europe/Lisbon /etc/localtime
+echo "Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch" > /etc/pacman.d/mirrorlist
 mkinitcpio -p linux
 echo -e "[$verde OK $corPadrao]"
 
@@ -78,13 +82,15 @@ useradd -m $nome
 passwd $nome 
 echo -e "[$verde OK $corPadrao]"
 echo -e "[$verde installarch $corPadrao]: Atualizando e baixando pacotes..."
-pacman -Syu
+pacman -Syuu
 pacman -S xf86-video-vesa
 pacman -S xfce4
 pacman -S xfdm
 echo -e "[$verde OK $corPadrao]"
+
 # Desmonta a partição e reinicia o sistema
 echo -e "[$verde installarch $corPadrao]: Finalizando instalação..."
+systemctl enable xfdm.service
 exit
 umount -a
 clear
