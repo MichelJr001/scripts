@@ -45,6 +45,7 @@ echo -e "[$verde installarch $corPadrao]: Montando partições..."
 mkfs.ext4 /dev/sda1
 mkswap /dev/sda2
 swapon /dev/sda2
+mount /dev/sda1 /mnt
 echo -e "[$verde OK $corPadrao]"
 
 # Instala o sistema basico nas partições montadas
