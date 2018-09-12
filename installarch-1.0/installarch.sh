@@ -61,7 +61,7 @@ LANG="pt_PT.UTF-8" locale > /etc/locale.conf
 locale-gen
 echo "KEYMAP=pt-latin9" > /etc/vconsole.conf
 ln -s /usr/share/zoneinfo/Europe/Lisbon /etc/localtime
-echo "Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch" > /etc/pacman.d/mirrorlist
+#echo "Server = http://mirror.ufam.edu.br/archlinux/$repo/os/$arch" > /etc/pacman.d/mirrorlist
 mkinitcpio -p linux
 echo -e "[$verde OK $corPadrao]"
 
